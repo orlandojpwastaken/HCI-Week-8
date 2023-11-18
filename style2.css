@@ -1,0 +1,133 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
+h1 {
+    text-align: center;
+    ;
+}
+
+h2 {
+    text-align: center;
+    margin: 3vh;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    max-width: 80%;
+    margin-bottom: 3vh;
+}
+
+.header {
+    background-color: lightgray;
+    padding: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.column {
+    float: left;
+    width: 37%;
+    padding: 15px;
+    background-color: lightgray;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#column1 {
+    margin-left: 10%;
+}
+
+#column2 {
+    margin-right: 10%;
+}
+
+.column img {
+    max-width: 90%;
+    margin: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+span {
+    margin: -10px;
+    padding: 10px
+}
+
+.button-container {
+    margin-top: 50px;
+    text-align: center;
+    min-width: 20%;
+}
+
+.button {
+    padding: 20px;
+    background-color: lightgray;
+    cursor: pointer;
+    border: transparent;
+    text-decoration: none;
+    color: black;
+    min-width: 20%;
+    display: inline-block
+}
+
+.button:hover {
+    background-color: gray;
+}
+
+@media only screen and (max-width: 895px) {
+    .column {
+        float: left;
+        width: 37%;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
+}
+
+@media only screen and (max-width: 725px) {
+    .column {
+        float: left;
+        width: 35%;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
+}
+
+@media only screen and (max-width: 445px) {
+    .column {
+        float: left;
+        width: 33%;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
+}
+
+@media only screen and (max-width: 281px) {
+    .column {
+        float: left;
+        width: 28%;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
+}

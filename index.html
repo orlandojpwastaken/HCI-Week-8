@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 Assignment Home Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".food").hover(function () {
+                $(this).next(".hidden").slideToggle({});
+            });
+            $('.hidden').hide()
+        });
+    </script>
+    <!--Fonts from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Week 8 Assignment - Home Page</h1>
+    </div>
+    <div class="button-container">
+        <a class="button" href="menu.html">
+            <b>Interactive Menu</b>
+        </a>
+    </div>
+    <div class="button-container">
+        <a class="button" href="gallery.html">
+            <b>Gallery with Image Filter</b>
+        </a>
+    </div>
+    <div class="button-container">
+        <a class="button" href="faq.html">
+            <b>FAQ</b>
+        </a>
+    </div>
+</body>
+</html>

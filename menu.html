@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibbs' Diner Menu</title>
+    <link rel="stylesheet" href="style2.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".food").hover(function () {
+                $(this).next(".hidden").slideToggle({});
+            });
+            $('.hidden').hide()
+        });
+    </script>
+    <!--Fonts from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gibbs' Diner</h1>
+    </div>
+    <h2> Menu </h2>
+    <hr>
+    <div class="row">
+        <div class="column" id="column1">
+            <div class="food">
+                <span>
+                    <p> Deluxe Chezborgir - 33k </p>
+                </span>
+            </div>
+            <div class="hidden">
+                <img src="imgs/chezborgir.jpg">
+                <p>
+                    A grilled Angus beef patty with melted aged cheddar, crisp bacon,
+                    fresh lettuce, ripe tomatoes, and truffle-infused aioli on a toasted brioche bun. Served with golden
+                    fries, it's a symphony of flavors taking the classic cheeseburger to new heights.
+                </p>
+            </div>
+        </div>
+        <div class="column" id="column2">
+            <div class="food">
+                <span>
+                    <p> Truffle French Fries - 25k </p>
+                </span>
+            </div>
+            <div class="hidden">
+                <img src="imgs/truffries.jpg">
+                <p>
+                    Golden perfection meets gourmet indulgence with
+                    crispy fries kissed by truffle oil, adorned with Parmesan, and garnished with fresh parsley. Each
+                    bite turns a classic into a culinary revelation.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column" id="column1">
+            <div class="food">
+                <span>
+                    <p> Mega Meatball Sub - 32k </p>
+                </span>
+            </div>
+            <div class="hidden">
+                <img src="imgs/meatsub.jpg">
+                <p>
+                    Featuring seasoned giant meatballs, robust marinara, and melted
+                    mozzarella in a toasted baguette. It's a carnivore's dream, redefining sandwich perfection. </p>
+                </p>
+            </div>
+        </div>
+        <div class="column" id="column2">
+            <div class="food">
+                <span>
+                    <p> Golden Waffle Fries - 23k </p>
+                </span>
+            </div>
+            <div class="hidden">
+                <img src="imgs/waffries.jpg">
+                <p>
+                    A crispy delight that combines the satisfying crunch of waffle-cut potatoes with a golden
+                    perfection. Served hot and seasoned to perfection, these fries are the ideal sidekick to any meal,
+                    ensuring a delightful texture and rich flavor in every bite.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="button-container">
+        <a class="button" href="index.html">
+            <b>Back to Home</b>
+        </a>
+    </div>
+
+</body>
+
+</html>
