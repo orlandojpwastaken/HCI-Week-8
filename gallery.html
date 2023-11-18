@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style3.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#all").click(function(){
+            $('.dark').show();
+            $('.cat').show();
+            $('.light').show();
+          });
+  
+          $("#light").click(function(){
+            $('.dark').hide();
+            $('.cat').hide();
+            $('.light').show();
+          });
+  
+          $("#dark").click(function(){
+            $('.light').hide();
+            $('.cat').hide();
+            $('.dark').show();
+          });
+  
+          $("#cat").click(function(){
+            $('.light').hide();
+            $('.dark').hide();
+            $('.cat').show();
+          });
+
+        });
+      </script>
+    <!--Fonts from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Wallpaper Gallery</h1>
+    </div>
+    <div class="button-container">
+        <button class="button" id="all">
+            <b>Show All</b>
+        </button>
+        <button class="button" id="light">
+            <b>Light Theme Wallpapers</b>
+        </button>
+        <button class="button" id="dark">
+            <b>Dark Mode Wallpapers</b>
+        </button>
+        <button class="button" id="cat">
+            <b>cat.</b>
+        </button>
+    </div>
+</body>
+<div class="image-container">
+    <div class="dark">
+        <img src="gallery/dark-forest.jpg">
+    </div>
+    <div class="light">
+        <img src="gallery/light-tower.jpg">
+    </div>
+    <div class="cat">
+        <img src="gallery/cat-zazu.jpg">
+    </div>
+    <div class="light">
+        <img src="gallery/light-sakura.jpg">
+    </div>
+    <div class="light">
+        <img src="gallery/light-tree.jpg">
+    </div>
+    <div class="dark">
+        <img src="gallery/dark-mountain.jpg">
+    </div>
+    <div class="cat">
+        <img src="gallery/cat-tugas.jpg">
+    </div>
+    <div class="dark">
+        <img src="gallery/dark-sunrise.jpg">
+    </div>
+    <div class="cat">
+        <img src="gallery/cat-stare.jpg">
+    </div>
+    <div class="dark">
+        <img src="gallery/dark-sunforest.jpg">
+    </div>
+    <div class="light">
+        <img src="gallery/light-sunrise.jpg">
+    </div>
+</div>
+<div class="button-container">
+    <a class="button" href="index.html">
+        <b>Back to Home</b>
+    </a>
+</div>
+</body>
+
+</html>
